@@ -1,0 +1,21 @@
+//
+//  GD-PrefixHeader.pch
+//  GD
+//
+//  Created by liuyixin on 15/11/3.
+//  Copyright © 2015年 chenyue. All rights reserved.
+//
+
+#ifndef GD_PrefixHeader_pch
+#define GD_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Constants.h"
+#import "UIImage+ImageWithColor.h"
+#import "UIView+LeftTopRightBottom.h"
+
+
+#endif /* GD_PrefixHeader_pch */
