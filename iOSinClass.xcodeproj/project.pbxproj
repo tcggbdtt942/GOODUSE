@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE2EF0FC1BFC5E5200F9C872 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2EF0FA1BFC5E5200F9C872 /* HomeViewController.m */; };
+		AE2EF0FD1BFC5E5200F9C872 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE2EF0FB1BFC5E5200F9C872 /* HomeViewController.xib */; };
 		DCBD58201BD8DA7000420FA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBD581F1BD8DA7000420FA7 /* main.m */; };
 		DCBD58231BD8DA7000420FA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBD58221BD8DA7000420FA7 /* AppDelegate.m */; };
 		DCBD58251BD8DA7000420FA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBD58241BD8DA7000420FA7 /* Images.xcassets */; };
@@ -25,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE2EF0F91BFC5E5200F9C872 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		AE2EF0FA1BFC5E5200F9C872 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		AE2EF0FB1BFC5E5200F9C872 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		DCBD581A1BD8DA7000420FA7 /* iOSinClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSinClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCBD581E1BD8DA7000420FA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCBD581F1BD8DA7000420FA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,6 +86,9 @@
 				DCBD58241BD8DA7000420FA7 /* Images.xcassets */,
 				DCBD58261BD8DA7000420FA7 /* LaunchScreen.xib */,
 				DCBD581D1BD8DA7000420FA7 /* Supporting Files */,
+				AE2EF0F91BFC5E5200F9C872 /* HomeViewController.h */,
+				AE2EF0FA1BFC5E5200F9C872 /* HomeViewController.m */,
+				AE2EF0FB1BFC5E5200F9C872 /* HomeViewController.xib */,
 			);
 			path = iOSinClass;
 			sourceTree = "<group>";
@@ -193,6 +201,7 @@
 			files = (
 				DCBD58281BD8DA7000420FA7 /* LaunchScreen.xib in Resources */,
 				DCBD58251BD8DA7000420FA7 /* Images.xcassets in Resources */,
+				AE2EF0FD1BFC5E5200F9C872 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +221,7 @@
 			files = (
 				DCBD58231BD8DA7000420FA7 /* AppDelegate.m in Sources */,
 				DCBD58201BD8DA7000420FA7 /* main.m in Sources */,
+				AE2EF0FC1BFC5E5200F9C872 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +408,7 @@
 				DCBD58391BD8DA7000420FA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCBD583A1BD8DA7000420FA7 /* Build configuration list for PBXNativeTarget "iOSinClassTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +417,7 @@
 				DCBD583C1BD8DA7000420FA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
