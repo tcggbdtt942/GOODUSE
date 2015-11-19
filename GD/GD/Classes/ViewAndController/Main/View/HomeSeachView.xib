@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeSeachView">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="scaleToFill" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JDw-c2-On0">
+                    <rect key="frame" x="10" y="0.0" width="403" height="44"/>
+                    <animations/>
+                    <color key="tintColor" red="1" green="0.47225669939999998" blue="0.43524659310000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="barTintColor" red="1" green="0.47225669939999998" blue="0.43524659310000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JDw-c2-On0" secondAttribute="bottom" id="2Vh-gd-pAr"/>
+                <constraint firstItem="JDw-c2-On0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="9fG-z9-uKf"/>
+                <constraint firstItem="JDw-c2-On0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PeB-vH-wao"/>
+                <constraint firstAttribute="trailing" secondItem="JDw-c2-On0" secondAttribute="trailing" constant="10" id="YIu-bM-wmm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="SeachBar" destination="JDw-c2-On0" id="MOC-oe-OvQ"/>
+            </connections>
+            <point key="canvasLocation" x="437.5" y="383"/>
+        </view>
+    </objects>
+</document>

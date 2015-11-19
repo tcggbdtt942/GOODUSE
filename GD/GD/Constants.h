@@ -23,7 +23,7 @@ __POINTER == (NSString *)[NSNull null] || \
 ![__POINTER length])
 //color
 #define Rgb2UIColor(r, g, b, a) [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:((a)/1.0)] //颜色设置
-#define THEME_COLOR Rgb2UIColor(28, 213, 216, 1) //主题色
+#define THEME_COLOR Rgb2UIColor(255, 120, 111, 1) //主题色
 #define BG_COLOR Rgb2UIColor(238, 238, 238, 1) //背景色
 #define LINE_COLOR Rgb2UIColor(229, 229, 229, 1)  //线颜色
 #define FONT_DARK_COLOR Rgb2UIColor(51, 51, 51, 1)  //字体颜色 深
@@ -41,4 +41,8 @@ __POINTER == (NSString *)[NSNull null] || \
 #define TABLEVIEW_NOHEIGHT 0.01f
 #define TABLEVIEW_CELLHEIGHT 44
 #define TABLEVIEW_MYTRAINEECELL_HEIGHT 123
+//APP INFO
+#define APP_DISPLAYNAME     [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"]
+#define ALERT_TITLE APP_DISPLAYNAME
+#define VERSION             [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
 #endif /* Constants_h */

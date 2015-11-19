@@ -26,6 +26,9 @@
 		92A2455C1BE892B70024E34C /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2455B1BE892B70024E34C /* base64.m */; };
 		92A245601BE892FA0024E34C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2455E1BE892FA0024E34C /* HomeViewController.m */; };
 		92A245611BE892FA0024E34C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A2455F1BE892FA0024E34C /* HomeViewController.xib */; };
+		92A2456A1BE89BE30024E34C /* HomeSeachView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A245691BE89BE30024E34C /* HomeSeachView.m */; };
+		92A2456C1BE89C100024E34C /* HomeSeachView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A2456B1BE89C100024E34C /* HomeSeachView.xib */; };
+		92A245701BE8AA1E0024E34C /* WZGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2456F1BE8AA1E0024E34C /* WZGuideViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,11 @@
 		92A2455E1BE892FA0024E34C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Classes/ViewAndController/Main/HomeViewController.m; sourceTree = "<group>"; };
 		92A2455F1BE892FA0024E34C /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = Classes/ViewAndController/Main/HomeViewController.xib; sourceTree = "<group>"; };
 		92A245621BE8932F0024E34C /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = Classes/Extension/Category/config.h; sourceTree = "<group>"; };
+		92A245681BE89BE30024E34C /* HomeSeachView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeSeachView.h; path = Classes/ViewAndController/Main/View/HomeSeachView.h; sourceTree = "<group>"; };
+		92A245691BE89BE30024E34C /* HomeSeachView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeSeachView.m; path = Classes/ViewAndController/Main/View/HomeSeachView.m; sourceTree = "<group>"; };
+		92A2456B1BE89C100024E34C /* HomeSeachView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeSeachView.xib; path = Classes/ViewAndController/Main/View/HomeSeachView.xib; sourceTree = "<group>"; };
+		92A2456E1BE8AA1E0024E34C /* WZGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZGuideViewController.h; path = Classes/ViewAndController/Welcome/WZGuideViewController.h; sourceTree = "<group>"; };
+		92A2456F1BE8AA1E0024E34C /* WZGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZGuideViewController.m; path = Classes/ViewAndController/Welcome/WZGuideViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +220,7 @@
 		92A2452E1BE885160024E34C /* ViewAndController */ = {
 			isa = PBXGroup;
 			children = (
+				92A2456D1BE8A9FF0024E34C /* Welcome */,
 				92A2452F1BE8853C0024E34C /* Main */,
 			);
 			name = ViewAndController;
@@ -220,6 +229,7 @@
 		92A2452F1BE8853C0024E34C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				92A245641BE899060024E34C /* View */,
 				92A245301BE885490024E34C /* Controller */,
 			);
 			name = Main;
@@ -273,6 +283,25 @@
 				92A2454D1BE88D290024E34C /* VPImageCropperViewController.m */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		92A245641BE899060024E34C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92A245681BE89BE30024E34C /* HomeSeachView.h */,
+				92A245691BE89BE30024E34C /* HomeSeachView.m */,
+				92A2456B1BE89C100024E34C /* HomeSeachView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		92A2456D1BE8A9FF0024E34C /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				92A2456E1BE8AA1E0024E34C /* WZGuideViewController.h */,
+				92A2456F1BE8AA1E0024E34C /* WZGuideViewController.m */,
+			);
+			name = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92A244FF1BE881F10024E34C /* Assets.xcassets in Resources */,
+				92A2456C1BE89C100024E34C /* HomeSeachView.xib in Resources */,
 				92A245611BE892FA0024E34C /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +436,7 @@
 			files = (
 				92A244F71BE881F10024E34C /* AppDelegate.m in Sources */,
 				92A245581BE88D290024E34C /* UIView+RoundedCorners.m in Sources */,
+				92A2456A1BE89BE30024E34C /* HomeSeachView.m in Sources */,
 				92A245561BE88D290024E34C /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				92A245521BE88D290024E34C /* TPKeyboardAvoidingScrollView.m in Sources */,
 				92A244F41BE881F10024E34C /* main.m in Sources */,
@@ -417,6 +448,7 @@
 				92A2454F1BE88D290024E34C /* GCPlaceholderTextView.m in Sources */,
 				92A245541BE88D290024E34C /* UIImage+ImageWithColor.m in Sources */,
 				92A2454E1BE88D290024E34C /* FlexibleAlignButton.m in Sources */,
+				92A245701BE8AA1E0024E34C /* WZGuideViewController.m in Sources */,
 				92A245501BE88D290024E34C /* NSArray+LINQ_Grouping.m in Sources */,
 				92A245571BE88D290024E34C /* UIView+LeftTopRightBottom.m in Sources */,
 			);

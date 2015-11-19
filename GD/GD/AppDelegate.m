@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"
+#import "WZGuideViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,24 +18,29 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+     /* -------- 加载主界面 -------- */
     HomeViewController *homeVC=[[HomeViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:homeVC];
     self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor=[UIColor whiteColor];
     self.window.rootViewController=nav;
     [self.window makeKeyAndVisible];
-    
+    /* -------- 全局UI设置 -------- */
+    //文本框通用设置
     [[UITextField appearance] setTintColor:THEME_COLOR];
-    
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:[UIColor redColor]] forBarMetrics:UIBarMetricsDefault];
+    //导航栏通用设置
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:THEME_COLOR] forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setShadowImage:[[UIImage alloc]init] ];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                          [UIColor whiteColor],NSForegroundColorAttributeName,
-                                                          [UIFont systemFontOfSize:20],
-                                                          NSFontAttributeName
-                                                          ,nil]];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont systemFontOfSize:20],NSFontAttributeName,nil]];
+    //状态栏通用设置
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    //控制首次运行出现引导页
+    if([[NSUserDefaults standardUserDefaults] boolForKey:VERSION]!=YES)
+    {
+        [WZGuideViewController show];
+    }
+    
     return YES;
 }
 

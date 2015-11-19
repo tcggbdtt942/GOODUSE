@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "HomeSeachView.h"
 
 @interface HomeViewController ()
 
@@ -16,6 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+#pragma mark-navigationbar
+    HomeSeachView *searchBar=[[HomeSeachView alloc]init];
+    searchBar=[[[NSBundle mainBundle]loadNibNamed:@"HomeSeachView" owner:self options:nil]objectAtIndex:0];
+    searchBar.frame=CGRectMake(0, 0,SCREEN_WIDTH, 44);
+    [searchBar.SeachBar setBackgroundImage:[UIImage imageWithColor:THEME_COLOR]];
+    
+    
+    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
+                                       initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                       target:nil action:nil];
+    negativeSpacer.width =-16;
+    UIBarButtonItem*leftBarButton=[[UIBarButtonItem alloc]initWithCustomView:searchBar];
+    self.navigationItem.leftBarButtonItems=[NSArray arrayWithObjects:negativeSpacer,leftBarButton,nil];
     // Do any additional setup after loading the view from its nib.
 }
 
